@@ -6,9 +6,9 @@ public class RopeController : MonoBehaviour
 {
     [SerializeField] private Transform ropeStartPoint, ropeEndPoint;
 
-    public void Init(Vector3 spawnPos)
+    public void Init(Vector3 spawnPos, bool state)
     {
-        ToggleRope(false);
+        ToggleRope(state);
         
         ropeStartPoint.position = spawnPos;
         ropeEndPoint.position = spawnPos;
